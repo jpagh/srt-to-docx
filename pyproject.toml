@@ -1,0 +1,19 @@
+[project]
+name = "srt-to-docx"
+version = "0.1.0"
+description = "Convert SRT subtitle files to formatted DOCX documents"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "docxtpl>=0.20.0",
+    "srt2>=3.5.4",
+]
+
+[project.scripts]
+srt-to-docx = "srt_to_docx.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+srt_to_docx = ["__assets__/*.docx"]
