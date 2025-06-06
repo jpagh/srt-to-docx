@@ -41,7 +41,7 @@ srt-to-docx input_directory
 
 ## Requirements
 
-- Python 3.9 or higher
+- Python 3.13 or higher
 - docxtpl (for DOCX template processing)
 - srt2 (for SRT file parsing)
 
