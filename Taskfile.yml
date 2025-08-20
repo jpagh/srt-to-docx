@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+
+  nuitka:
+    cmds:
+      - |
+        $HOME\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m nuitka --output-filename=srt-to-docx --mode=onefile --follow-imports --include-data-file=src/srt_to_docx/__assets__/srt-to.docx=__assets__/srt-to.docx $HOME\\projects\\srt-to-docx\\src\\srt_to_docx\\srt_to_docx.py
+    silent: true
+
+  pyinstaller:
+    cmds:
+      - |
+        $HOME\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\pyinstaller.exe --add-data "src/srt_to_docx/__assets__/srt-to.docx:__assets__/" $HOME\\projects\\srt-to-docx\\src\\srt_to_docx\\srt_to_docx.py
+    silent: true

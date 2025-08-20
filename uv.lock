@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.13"
 
 [[package]]
@@ -149,6 +149,9 @@ requires-dist = [
     { name = "docxtpl", specifier = ">=0.20.0" },
     { name = "srt2", specifier = ">=3.5.4" },
 ]
+
+[package.metadata.requires-dev]
+dev = []
 
 [[package]]
 name = "srt2"

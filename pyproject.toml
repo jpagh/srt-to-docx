@@ -9,8 +9,11 @@ dependencies = [
     "srt2>=3.5.4",
 ]
 
+[dependency-groups]
+dev = []
+
 [project.scripts]
-srt-to-docx = "srt_to_docx.main:main"
+srt-to-docx = "srt_to_docx.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

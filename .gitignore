@@ -6,5 +6,13 @@ dist/
 wheels/
 *.egg-info
 
+# Nuitka
+*.build/
+*.dist/
+*.onefile-build/
+
+# Pyinstaller
+*.spec
+
 # Virtual environments
 .venv
