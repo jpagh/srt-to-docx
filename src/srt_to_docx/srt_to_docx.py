@@ -98,7 +98,9 @@ async def find_and_convert_srt_files(directory):
 
 def main():
     if len(sys.argv) == 1:
-        asyncio.run(find_and_convert_srt_files(os.getcwd()))
+        print("No path provided. Please specify a file or directory containing .srt files.")
+        print("Usage: srt-to-docx [directory_path|file_path]")
+        sys.exit(1)
     elif len(sys.argv) != 2:
         print("Usage: srt-to-docx [directory_path|file_path]")
     else:
