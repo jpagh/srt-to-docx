@@ -1,6 +1,6 @@
 [project]
 name = "srt-to-docx"
-version = "0.1.0"
+version = "0.1.1"
 description = "Convert SRT subtitle files to formatted DOCX documents"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -9,11 +9,12 @@ dependencies = [
     "srt2>=3.5.4",
 ]
 
-[dependency-groups]
-dev = []
-
 [project.scripts]
 srt-to-docx = "srt_to_docx.__main__:main"
+
+[build-system]
+requires = ["setuptools>=80.9.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
